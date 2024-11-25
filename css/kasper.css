@@ -2,7 +2,7 @@
 :root {
   --main-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
-  --section-padding: 70px;
+  --section-padding: 100px;
 }
 /*  End Main Variables */
 /* Start Global Rules  */
@@ -32,7 +32,7 @@ ul {
 /* Small */
 @media (min-width: 768px) {
   .container {
-    width: 756px;
+    width: 750px;
   }
 }
 /* Medium */
@@ -50,14 +50,13 @@ ul {
 /* End Global Rules  */
 /* Start Main Components */
 .main-heading {
-  padding: 80px 0px 60px;
   text-align: center;
 }
 .main-heading h2 {
   font-size: 40px;
   font-weight: normal;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   text-transform: uppercase;
 }
 .main-heading h2::before {
@@ -66,9 +65,9 @@ ul {
   left: 50%;
   transform: translatex(-50%);
   height: 2px;
-  width: 130px;
-  background-color: black;
-  bottom: -17px;
+  width: 120px;
+  /* background-color: black; */
+  bottom: -30px;
 }
 .main-heading h2::after {
   content: "";
@@ -776,12 +775,7 @@ header .navigator .search i:hover {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
-@media (min-width: 992px) {
-  .pricing .plans {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  }
-}
+
 .pricing .plans .plan {
   background-color: #fcfcfc;
   text-align: center;
@@ -792,17 +786,15 @@ header .navigator .search i:hover {
 .pricing .plans .plan .head {
   border-top: 1px solid var(--main-color);
   border-bottom: 1px solid var(--main-color);
-  padding: 20px;
+  padding: 40px 20px;
 }
 .pricing .plans .plan .head h3 {
   font-weight: normal;
-  margin: 13px 0px;
+  margin-bottom: 13px;
   text-transform: uppercase;
 }
 .pricing .plans .plan .head span {
   font-size: 50px;
-  position: relative;
-  color: var(--main-color);
   font-weight: 500;
 }
 .pricing .plans .plan .head span::before {
@@ -889,9 +881,6 @@ header .navigator .search i:hover {
   background-size: cover;
   position: relative;
   color: white;
-  height: 350px;
-  display: flex;
-  align-items: center;
 }
 .subscribe::before {
   content: "";
@@ -920,7 +909,6 @@ header .navigator .search i:hover {
 }
 .subscribe .container form i {
   position: absolute;
-  font-size: 27px;
   top: 50%;
   transform: translateY(-50%);
   left: 8px;
@@ -929,7 +917,6 @@ header .navigator .search i:hover {
   background: none;
   border: 1px solid white;
   padding: 10px 10px 10px 40px;
-  color: white;
   caret-color: var(--main-color);
   width: calc(100% - 130px);
   border-right: transparent;
