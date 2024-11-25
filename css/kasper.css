@@ -221,6 +221,9 @@ header .navigator .search i:hover {
   display: flex;
   justify-content: flex-end;
 }
+.landing .text .content h2 span {
+  color: var(--main-color);
+}
 @media (max-width: 768px) {
   .landing .text {
     width: 100%;
